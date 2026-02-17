@@ -1,0 +1,6 @@
+ATV Ride Comfort and Suspension Dynamics Analysis using MSC Adams
+
+[1] Built and simulated an ATV multibody model to analyse vertical ride comfort and vibration modes.
+[2] Performed FFT, modal, and transfer-function analysis to identify heave, pitch, roll, and wheel-hop modes.
+[3] Conducted suspension parameter studies on damping and stiffness, including nonlinear damper behaviour.
+[4] Evaluated ride comfort impact on stochastic and bump road profiles.
