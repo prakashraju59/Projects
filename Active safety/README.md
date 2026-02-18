@@ -4,7 +4,7 @@ This repository contains technical reports and implementations from the **Active
 
 ## 📂 Project Structure
 
-### 1. ADAS Prototyping Platform (ROS 2)
+### 1. ADAS Prototyping Platform (ROS 2) [Report](http://hdl.handle.net/20.500.12380/310975)
 * **Objective:** Build a small-scale Driver-in-the-Loop testing platform.
 * **Key Contributions:** * Designed a ROS 2 architecture for sensor fusion (LiDAR + Camera).
     * Implemented **AEB logic** based on stopping-distance triggers.
