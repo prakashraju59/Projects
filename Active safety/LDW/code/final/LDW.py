@@ -270,16 +270,7 @@ class LaneDepartureNode(Node):
             if ldw_warning:
                 cv2.putText(result, warning_text, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
 
-            # --- REMOVE DISPLAY CODE THAT CAUSES CRASH ---
-            # cv2.imshow("Lane Departure Warning", result)
-            # cv2.imshow("Binary BEV", binary)
-            # key = cv2.waitKey(1)
-            # if key == ord('q') or key == 27:
-            #     self.get_logger().info("Shutdown requested by user.")
-            #     cv2.destroyAllWindows()
-            #     rclpy.shutdown()
-
-            # --- PUBLISH THE PROCESSED IMAGE INSTEAD ---
+           # --- PUBLISH THE PROCESSED IMAGE INSTEAD ---
             try:
                 processed_msg = self.bridge.cv2_to_imgmsg(result, "bgr8")
                 self.processed_image_pub.publish(processed_msg)
@@ -302,4 +293,5 @@ def main(args=None):
         rclpy.shutdown()
 
 if __name__ == '__main__':
+
     main()
